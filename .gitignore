@@ -1,0 +1,22 @@
+# Ambientes e caches
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+.env
+
+# Dados e Datasets (Arquivos pesados gerenciados no Google Drive)
+data/
+*.parquet
+*.npy
+*.mat
+*.npz
+*.csv
+
+# MLflow e logs
+mlruns/
+.mlflow/
+
+# IDEs e temporários
+.vscode/
+.idea/

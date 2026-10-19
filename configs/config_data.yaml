@@ -1,0 +1,15 @@
+# Configuração de Caminhos de Dados e Atributos
+dataset_paths:
+  real_lumo: "data/dataset_real_lumo.parquet"
+  sintetico_abaqus: "data/dataset_sintetico_abaqus.parquet"
+
+features:
+  config: "principal"     # Opções: "principal" (d=3620) ou "completa" (d=12308)
+  prefix: "feat_"
+  dimensao_esperada: 3620
+
+particoes_alvo:
+  calibracao_coluna: "conjunto"
+  calibracao_valor: "calibracao"
+  limiar_valor: "limiar"
+  teste_valor: "teste"

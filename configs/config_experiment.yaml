@@ -1,0 +1,19 @@
+# Hiperparâmetros de Treinamento, UDA e Classificação
+experiment:
+  name: "SHM_Transfer_Learning_LUMO"
+  random_seed: 42
+
+transfer_learning:
+  method: "TCA"           # Opções: "Baseline_Sem_TL", "TCA", "JDA", "CORAL"
+  n_components: 30
+  kernel: "rbf"
+  gamma: 0.1
+  mu: 1.0
+
+classifier:
+  type: "SVM"             # Opções: "SVM", "Random_Forest", "GMM"
+  kernel: "rbf"
+  C: 10.0
+
+subconjuntos_curva_aprendizado:
+  amostras_por_classe: [100, 250, 500, 1000, 2000]
